@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配移动端 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传感器技术 - 精品课程</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        /* 页面顶部样式 */
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        /* 导航栏样式 */
+        nav {
+            background-color: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        /* 主体内容容器 */
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 模块通用样式 */
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            padding-left: 10px;
+        }
+
+        /* 课程介绍样式 */
+        .course-intro p {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #333;
+        }
+
+        /* 知识点网格样式 */
+        .knowledge-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            border-top: 4px solid #3498db;
+        }
+
+        .card h3 {
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        /* 列表样式 */
+        ul {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        /* 底部样式 */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 页面头部 -->
+    <header>
+        <h1>传感器技术</h1>
+        <p>智能制造 | 物联网 | 自动化检测 | 精品专业课程</p>
+    </header>
+
+    <!-- 导航栏 -->
+    <nav>
+        <a href="#intro">课程介绍</a>
+        <a href="#knowledge">核心知识点</a>
+        <a href="#application">应用领域</a>
+        <a href="#resource">学习资源</a>
+    </nav>
+
+    <!-- 主体内容 -->
+    <div class="container">
+        <!-- 课程介绍模块 -->
+        <section id="intro" class="section course-intro">
+            <h2>📚 课程介绍</h2>
+            <p>
+                传感器技术是现代信息技术的三大支柱之一（传感器、计算机、通信），是获取自然信息与工业信息的关键技术。
+                本课程系统讲解各类传感器的工作原理、结构、特性、测量电路及实际应用，面向自动化、物联网、电子信息、智能制造等专业，
+                培养学生具备传感器选型、调试、应用与系统集成的工程实践能力。
+            </p>
+            <br>
+            <p><strong>适用专业：</strong> 自动化、物联网工程、电子信息工程、智能制造、机电一体化</p>
+            <p><strong>课程目标：</strong> 掌握常用传感器原理 → 具备选型与调试能力 → 能完成小型检测系统设计</p>
+        </section>
+
+        <!-- 核心知识点模块 -->
+        <section id="knowledge" class="section">
+            <h2>🔧 课程核心知识点</h2>
+            <div class="knowledge-grid">
+                <div class="card">
+                    <h3>基础概念</h3>
+                    <p>传感器定义、组成、分类、性能指标（精度、灵敏度、线性度、迟滞、重复性）</p>
+                </div>
+                <div class="card">
+                    <h3>物理类传感器</h3>
+                    <p>温度、湿度、压力、位移、速度、加速度、流量、液位、光电、霍尔传感器</p>
+                </div>
+                <div class="card">
+                    <h3>信号处理</h3>
+                    <p>电桥电路、放大电路、滤波电路、A/D转换、信号校准与补偿技术</p>
+                </div>
+                <div class="card">
+                    <h3>智能传感器</h3>
+                    <p>MEMS传感器、物联网传感器、无线传感器网络、传感器与单片机接口</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 应用领域模块 -->
+        <section id="application" class="section">
+            <h2>🌐 典型应用领域</h2>
+            <ul>
+                <li><strong>工业自动化：</strong> 生产检测、过程控制、机器人触觉感知</li>
+                <li><strong>物联网(IoT)：</strong> 智能家居、环境监测、智慧农业、智慧城市</li>
+                <li><strong>汽车电子：</strong> 胎压监测、速度传感、安全气囊、自动驾驶感知</li>
+                <li><strong>医疗健康：</strong> 体温、心电、血压、呼吸监测设备</li>
+                <li><strong>消费电子：</strong> 手机陀螺仪、指纹传感器、屏幕触控</li>
+            </ul>
+        </section>
+
+        <!-- 学习资源模块 -->
+        <section id="resource" class="section">
+            <h2>📖 学习资源</h2>
+            <ul>
+                <li>《传感器原理及应用》（官方教材）</li>
+                <li>常用传感器芯片手册（STM32、Arduino配套传感器）</li>
+                <li>实验指导：温度传感器AD590、霍尔传感器、红外传感器实操</li>
+                <li>在线工具：传感器选型手册、特性曲线计算工具</li>
+                <li>推荐平台： Arduino、51单片机、STM32传感器开发</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- 页面底部 -->
+    <footer>
+        <p>传感器技术课程网页 &copy; 2025 教学专用</p>
+    </footer>
+
+</body>
+</html>
